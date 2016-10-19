@@ -1,0 +1,17 @@
+{
+  "name": "familly-tree",
+  "authors": [
+    "Miroslav Vidovic <miroslav-vidovic@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
