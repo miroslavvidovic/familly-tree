@@ -1,44 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-
-    <title>Collapsible Tree Example</title>
-
-    <style>
-
- .node circle {
-   fill: #fff;
-   stroke: steelblue;
-   stroke-width: 3px;
- }
-
- .node text { font: 12px sans-serif; }
-
- .link {
-   fill: none;
-   stroke: #ccc;
-   stroke-width: 2px;
- }
- 
-    </style>
-
-  </head>
-
-  <body>
-
-<!-- load the d3.js library --> 
-<script src="http://d3js.org/d3.v3.min.js"></script>
- 
-<script>
-
 var data = [
     { "name" : "Level 2: A", "parent":"Top Level" },
     { "name" : "Top Level", "parent":"null" },
     { "name" : "Son of A", "parent":"Level 2: A" },
     { "name" : "Daughter of A", "parent":"Level 2: A" },
     { "name" : "Level 2: B", "parent":"Top Level" }
-    ];
+];
 
 var dataMap = data.reduce(function(map, node) {
  map[node.name] = node;
@@ -123,8 +89,3 @@ function update(source) {
    .attr("d", diagonal);
 
 }
-
-</script>
- 
-  </body>
-</html>
